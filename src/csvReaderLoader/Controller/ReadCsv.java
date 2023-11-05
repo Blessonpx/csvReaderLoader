@@ -15,9 +15,9 @@ public class ReadCsv {
 		String jdbcUrl = "jdbc:mysql://localhost:3306/test_db_1";
         String username = "root";
         String password = "BPXmysql*123";
-        String csvFilePath = "D:\\Code\\Java\\spring\\sample_csv\\zuari1698665250998_2023-10-26+to+2023-10-30.csv";
+        String csvFilePath = "D:\\Code\\Java\\spring\\sample_csv\\1698665250998_2023-10-26+to+2023-10-30.csv";
         
-String insertQuery = "INSERT INTO del_rep_sample(sender,receiver,country_code,message_id,conversation_id,request_id,conversation_type,campaign,template,message_payload,payload_type,message_type,MO_MT,sent,delivered,`read`,failed,error_code,error_description,`source`,pair_id) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
+String insertQuery = "INSERT INTO delre_sample(sender,receiver,country_code,message_id,conversation_id,request_id,conversation_type,campaign,template,message_payload,payload_type,message_type,MO_MT,sent,delivered,`read`,failed,error_code,error_description,`source`,pair_id) VALUES (?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?,?)";
         
         try (Connection connection = DriverManager.getConnection(jdbcUrl, username, password);
              PreparedStatement preparedStatement = connection.prepareStatement(insertQuery);
