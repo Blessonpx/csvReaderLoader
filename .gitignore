@@ -1,0 +1,6 @@
+*.zip
+*.jar
+*.war
+*.tar
+*.class
+git_commit.sh
